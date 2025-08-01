@@ -1,4 +1,4 @@
-name: Redmi 4X
+name: Redmi Note 4
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
       fail-fast: false
       matrix:
         CONFIG:
-          - R4X
+          - lineage-22.2
 
     steps:
       - name: Checkout sources
