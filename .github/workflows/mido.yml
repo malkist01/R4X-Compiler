@@ -1,4 +1,4 @@
-name: Redmi Note 4X
+name: Redmi 4X
 
 on:
   push:
@@ -19,14 +19,14 @@ jobs:
     container:
      image: pexcn/docker-images:bookworm-android
     env:
-      TZ: Asia/Taipei
+      TZ: Asia/Jakarta
       BUILD_CONFIG: ${{ matrix.CONFIG }}
-      DEVICE_CODENAME: mido
+      DEVICE_CODENAME: santoni
     strategy:
       fail-fast: false
       matrix:
         CONFIG:
-          - lineage-22.1
+          - R4X
 
     steps:
       - name: Checkout sources
