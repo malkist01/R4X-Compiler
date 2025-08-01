@@ -21,7 +21,7 @@ jobs:
     env:
       TZ: Asia/Jakarta
       BUILD_CONFIG: ${{ matrix.CONFIG }}
-      DEVICE_CODENAME: santoni
+      DEVICE_CODENAME: mido
     strategy:
       fail-fast: false
       matrix:
